@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lade Chattify für Android herunter.">
+  <meta name="theme-color" content="#0b0b14">
+  <title>Chattify – Android Download</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b0b14; --text:#f7f7ff; --muted:#aaaac4; --accent:#8b5cf6; --accent2:#4f8cff; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; padding:24px; display:grid; place-items:center;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--text);
+      background:radial-gradient(ellipse at 15% 10%,rgba(139,92,246,.22),transparent 38%),
+                 radial-gradient(ellipse at 85% 85%,rgba(79,140,255,.17),transparent 35%),var(--bg);
+    }
+    .wrap { width:min(100%,760px); }
+    header { display:flex; align-items:center; gap:12px; margin-bottom:26px; }
+    .logo { width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(135deg,var(--accent),var(--accent2));font-weight:900;font-size:23px;box-shadow:0 8px 28px rgba(116,91,255,.3); }
+    .brand { font-size:23px;font-weight:800;letter-spacing:-.6px; }
+    .brand span { color:#a78bfa; }
+    .card { border:1px solid rgba(255,255,255,.1);border-radius:28px;padding:clamp(26px,6vw,52px);background:rgba(22,22,40,.9);box-shadow:0 25px 90px rgba(0,0,0,.32); }
+    .pill { display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(167,139,250,.28);color:#d7c8ff;background:rgba(139,92,246,.12);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700;letter-spacing:.7px;text-transform:uppercase; }
+    h1 { font-size:clamp(38px,7vw,62px);line-height:1.02;letter-spacing:-2.2px;margin:22px 0 16px; }
+    h1 span { background:linear-gradient(90deg,#c4b5fd,#80b7ff);-webkit-background-clip:text;background-clip:text;color:transparent; }
+    .intro { max-width:560px;color:var(--muted);font-size:17px;line-height:1.7;margin:0 0 28px; }
+    .download { display:inline-flex;justify-content:center;align-items:center;gap:10px;width:100%;min-height:58px;border:0;border-radius:15px;padding:16px 22px;color:white;text-decoration:none;font-weight:800;font-size:16px;background:linear-gradient(100deg,var(--accent),var(--accent2));box-shadow:0 10px 28px rgba(98,91,255,.25);transition:transform .18s,filter .18s; }
+    .download:hover { transform:translateY(-2px);filter:brightness(1.1); }
+    .download:focus-visible { outline:3px solid white;outline-offset:4px; }
+    .meta { display:flex;flex-wrap:wrap;gap:10px 20px;color:var(--muted);font-size:13px;margin-top:17px; }
+    .meta span::before { content:"✓";color:#86efac;margin-right:7px;font-weight:900; }
+    .note { margin-top:22px;padding:14px 16px;border:1px solid rgba(255,255,255,.08);border-radius:14px;color:var(--muted);font-size:13px;line-height:1.65; }
+    .divider { height:1px;background:rgba(255,255,255,.09);margin:32px 0 24px; }
+    .features { display:grid;grid-template-columns:repeat(3,1fr);gap:16px; }
+    .feature { border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:16px;background:rgba(255,255,255,.025); }
+    .feature .icon { font-size:23px; }
+    .feature h2 { font-size:14px;margin:10px 0 6px; }
+    .feature p { color:var(--muted);font-size:12px;line-height:1.6;margin:0; }
+    footer { color:#777790;text-align:center;font-size:12px;padding:22px 8px 0; }
+    @media(max-width:560px) { body{padding:16px}.features{grid-template-columns:1fr}.feature{display:grid;grid-template-columns:34px 1fr;column-gap:10px}.feature .icon{grid-row:span 2}.feature h2{margin:2px 0 4px} }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">C</div>
+      <div class="brand">chat<span>tify</span></div>
+    </header>
+
+    <section class="card" aria-labelledby="title">
+      <div class="pill">✦ Chattify für Android</div>
+      <h1 id="title">Bleib in <span>Verbindung.</span></h1>
+      <p class="intro">Hol dir Chattify auf dein Android-Smartphone. Lade die Installationsdatei herunter und starte dein Chat-Erlebnis.</p>
+
+      <!-- Lege deine echte APK unter downloads/Chattify.apk ab oder ändere den Link unten auf die URL deiner APK. -->
+      <a class="download" href="downloads/Chattify.apk" download="Chattify.apk">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 17v3h14v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Chattify für Android herunterladen
+      </a>
+
+      <div class="meta">
+        <span>Android</span>
+        <span>APK-Datei</span>
+        <span>Version 1.0.0 – bitte anpassen</span>
+      </div>
+
+      <div class="note">
+        <strong>Installation:</strong> Nach dem Download öffnest du die APK-Datei auf deinem Android-Gerät und folgst den Anweisungen. Je nach Gerät musst du erlauben, dass dein Browser oder Dateimanager Apps aus dieser Quelle installieren darf. Installiere nur APK-Dateien, denen du vertraust.
+      </div>
+
+      <div class="divider"></div>
+      <div class="features">
+        <article class="feature">
+          <div class="icon" aria-hidden="true">💬</div>
+          <h2>Einfach chatten</h2>
+          <p>Ein klarer Ort für deine Unterhaltungen.</p>
+        </article>
+        <article class="feature">
+          <div class="icon" aria-hidden="true">📱</div>
+          <h2>Für Android</h2>
+          <p>Direkter Download der Android-Installationsdatei.</p>
+        </article>
+        <article class="feature">
+          <div class="icon" aria-hidden="true">🔒</div>
+          <h2>Vertrauenswürdig bleiben</h2>
+          <p>Veröffentliche nur eine geprüfte und sichere APK.</p>
+        </article>
+      </div>
+    </section>
+    <footer>© <span id="year"></span> Chattify · Android-Installation kann die Freigabe unbekannter Apps erfordern.</footer>
+  </main>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
